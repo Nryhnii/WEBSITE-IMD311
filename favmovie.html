@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            margin: 0;
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        #myVideo 
+        {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+
+        .content 
+        {
+         position:absolute;
+         bottom: 0;
+         background: rgba(0, 0, 0, 0.5);
+         color: gold;
+        width: 100%;
+        padding: 20px;
+        }
+
+        #myBtn 
+        {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        }
+
+        #myBtn:hover 
+        {
+        background: #ddd;
+        color: black;
+        }
+
+        .content a 
+        {
+            text-align: center;
+        }
+
+        p
+        {
+            text-align: justify;
+            line-height: -20px;
+        }
+
+        button
+        {
+            width: 100px;
+            padding: 10px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            border: 1px solid #817df9;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        span
+        {
+            background: #817df9;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span
+        {
+            width: 100%;
+        }
+
+        button:hover
+        {
+            border: none;
+        }
+
+            </style>
+        </head>
+
+    <body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="video/Hellboy (2019 Movie) New Trailer “Red Band”.mp4" type="video/mp4">
+        <source src="video/Hellboy (2019 Movie) New Trailer “Red Band”.mp4" type="video/ogg">
+         Your browser does not support HTML5 video.
+    </video>
+
+
+    <div class="content">
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Hellboy (2019 Movie)</h1>
+        
+            <p style="font-family: 'Times New Roman', Times, serif; color: beige;">
+                Hellboy is a 2019 superhero film based on the Dark Horse 
+                Comics character of the same name, created by Mike Mignola. A reboot of the Hellboy film series, it is the third live-action entry 
+                in the franchise; directed by Neil Marshall, the film stars David Harbour in the title role, alongside Milla Jovovich, Ian McShane, 
+                Sasha Lane, Daniel Dae Kim, and Thomas Haden Church. The film draws inspiration from the comic books Darkness Calls, The Wild Hunt, 
+                The Storm and the Fury, and Hellboy in Mexico. In the film, Hellboy struggles with his psyche while preventing a resurrected sorceress 
+                from conquering the world.
+            </p> 
+            
+        <p>
+        <!--Creating button using button onclick-->
+        <button onclick="document.location ='about.html'"><span></span>Back</button>
+    </p>
+</div>
+
+</body>
+</html>

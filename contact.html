@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <style>
+        h1 {text-align: center; color: gold;}
+        h2 {text-align: center; color: brown;}
+        p {text-align: center; color: #fff;}
+        br {text-align: center;}
+
+        body 
+        {
+            background-image: url('images/contact.jpg'); 
+        }
+
+        button
+        {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #817df9;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span
+        {
+            background: #817df9;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        
+        button:hover span
+        {
+            width: 100%;
+        }
+
+        button:hover
+        {
+            border: none;
+        }
+
+        a
+        {
+            text-decoration: none
+        }
+        </style>
+
+    <br>
+    <br>
+    <br>
+    <br>
+        
+        
+    <h1 style="font-family:verdana;">CONTACT</h1>
+    <p style="font-family:courier;">This is the social media that i used</p>
+    
+    <body>
+        <br>
+        <p>
+        <!--Using image as hyperlink for global link-->
+        <a href="mailto:ayuhananin@gmail.com"> <img src="images/logoemail.png" width="150" height="150"></a>
+        <a href="https://www.instagram.com/nryhni/"> <img src="images/logoig.png" width="150" height="150"></a>
+        <a href="https://www.facebook.com/yulniss"> <img src="images/logofb.webp" width="150" height="150"></a>
+        <a href="https://www.tiktok.com/@itsn0ty0u"> <img src="images/logotiktok.webp" width="150" height="150"></a>
+        </p>
+
+        <p>
+            <!--Creating button using button onclick-->
+            <button onclick="document.location ='index.html'"><span></span>Back</button>
+
+        </p>
+
+    </body>
+    
+</html>

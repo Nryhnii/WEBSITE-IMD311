@@ -1,0 +1,158 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>My Education</title>
+
+  </head>
+
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('images/edu.jpg');
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper
+{
+    margin-top: 5%;
+}
+
+.wrapper h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.team
+{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member
+{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: black;
+    position: relative;
+}
+
+.team .team_member h3 
+{
+    color:rgb(0, 0, 0);
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.team .team_member p.role
+{
+    color: green;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+button
+{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #817df9;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+}
+
+        span
+        {
+            background: #817df9;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span
+        {
+            width: 100%;
+        }
+
+        button:hover{
+            border: none;
+        }
+
+  </style>
+<body>
+ 
+<div class="wrapper">
+
+  <h1>EDUCATION</h1>
+
+  <div class="team">
+    <div class="team_member">
+     
+        <p><img src="images/sk2.jfif" width="30%" height="30%"></p>
+        <h3>Sekolah Kebangsaan Taman Sri Gombak 2</h3>
+        <p class="role">Primary School</p>
+        <p>SKTSG2 has been my educational home since I was seven years old.</p>
+        <a href="https://ms.wikipedia.org/wiki/Sekolah_Kebangsaan_Taman_Seri_Gombak_2">Learn More</a>
+    </div>
+    
+    <div class="team_member">
+        
+        <p><img src="images/logo-sekolah-sutas22 (1).png" width="30%" height="30%"></p>
+        <h3>SMK Sungai Kertas</h3>
+        <p class="role">Secondary School</p>
+        <p>Following the UPSR examination. I kept on learning at SMKSK. I majored in 
+        accounting when I was in fourth grade.</p>
+        <a href="https://ms.wikipedia.org/wiki/Sekolah_Menengah_Kebangsaan_Sungai_Kertas">Learn More</a>
+    </div>
+
+    <div class="team_member">
+        <p><img src="images/uitm.jfif" width="40%" height="30%"></p>
+        <h3>Universiti Teknologi MARA</h3>
+        <p class="role">Univeristy</p>
+        <p>I'm currently enrolled in my third higher education.
+        After completing SPM, I registered right away at the UiTM Rembau Branch to start studying for a Diploma 
+        in Information Management.  </p>
+        <a href="https://nsembilan.uitm.edu.my/rembau/">Learn More</a>
+      
+        
+    </div>
+</div>
+</div>
+
+<p style="text-align: center;">
+  <!--Creating button using button onclick-->
+  <button onclick="document.location ='index.html'"><span></span>Back</button>
+</p>
+
+
+</body>
+</html>

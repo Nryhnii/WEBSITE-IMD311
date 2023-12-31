@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Favourite Food</title>
+    </head>
+
+        <style>
+
+       body
+       {
+        background-image: url('images/about-bgg.png');
+        position: flex;
+        padding: 20px;
+        text-align: center;
+       }
+
+
+            h1 {color: darkolivegreen; text-align: center;}
+            p {color: black; text-align: center;}
+            
+            button
+            {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #817df9;
+            background: transparent;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            }
+
+        span
+        {
+            background: #817df9;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span
+        {
+            width: 100%;
+        }
+
+        button:hover
+        {
+            border: none;
+        }
+        
+        </style>
+
+            <body>
+                <h1>Favourite Food & Drink</h1>
+                <p><i>Click <b>the icon</b> to know more what my <b>Favourite</b></i></p>
+
+            <p>
+                    <img src="images/food.jpg" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="_blank" alt="Heavy Meals" href="https://www.google.com/search?q=nasi+goreng+paprik&tbm=isch&rlz=1C1ONGR_enMY954MY954&hl=en&sa=X&ved=2ahUKEwiSttzBgLiDAxXsmGMGHaTdAzsQBXoECAEQWg&biw=1226&bih=552" title="Heavy Meals" href="" coords="110,21,17,109" shape="rect">
+                        <area target="_blank" alt="Fast Food" href="https://www.google.com/search?q=the+brgr&tbm=isch&ved=2ahUKEwiXjf-dgriDAxXwlGMGHVnMD5AQ2-cCegQIABAA&oq=the+brgr&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BggAEAcQHjoQCAAQgAQQigUQQxCxAxCDAToKCAAQgAQQigUQQzoICAAQgAQQsQM6BAgAEANQvgdYoxFg4BZoAHAAeACAAUKIAboDkgEBOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=6H-QZZf5N_CpjuMP2Zi_gAk&bih=552&biw=1226&rlz=1C1ONGR_enMY954MY954&hl=en" title="Fast Food" href="" coords="137,20,231,104" shape="rect">
+                        <area target="_blank" alt="Dessert" href="https://www.google.com/search?q=suka+dessert&tbm=isch&ved=2ahUKEwiYvY6ygriDAxVivWMGHR9eA5sQ2-cCegQIABAA&oq=suka+dese&gs_lcp=CgNpbWcQARgAMgkIABCABBAYEAoyCQgAEIAEEBgQCjIJCAAQgAQQGBAKMgkIABCABBAYEAoyCQgAEIAEEBgQCjIJCAAQgAQQGBAKMgkIABCABBAYEAoyCQgAEIAEEBgQCjIJCAAQgAQQGBAKMgkIABCABBAYEAo6BAgjECc6BQgAEIAEOgsIABCABBCKBRCxAzoECAAQAzoICAAQgAQQsQM6CwgAEIAEELEDEIMBULEJWKUXYLMwaABwAHgAgAE0iAHIA5IBAjEwmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=E4CQZdjnBuL6juMPn7yN2Ak&bih=552&biw=1226&rlz=1C1ONGR_enMY954MY954&hl=en" title="Dessert" href="" coords="19,134,109,219" shape="rect">
+                        <area target="_blank" alt="Drink" href="https://www.google.com/search?q=extra+joss+mangga&tbm=isch&ved=2ahUKEwiqsJPBgriDAxX7RmwGHYYnBscQ2-cCegQIABAA&oq=extra+joss+mangga&gs_lcp=CgNpbWcQAzIFCAAQgAQyBggAEAUQHjIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDoECCMQJzoICAAQgAQQsQM6CggAEIAEEIoFEEM6CwgAEIAEELEDEIMBOgQIABADOgQIABAeOgYIABAIEB46CQgAEIAEEBgQClC5CVj_N2CxOmgBcAB4AIABcIgBnAiSAQQxOC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=MoCQZarPJ_uNseMPhs-YuAw&bih=552&biw=1226&rlz=1C1ONGR_enMY954MY954&hl=en" title="Drink" href="" coords="140,128,227,226" shape="rect">
+                    </map>
+
+
+            
+            <p>
+                <!--Creating button using button onclick-->
+                <button onclick="document.location ='about.html'"><span></span>Back</button>
+    
+            </p>
+        </body>
+</html>

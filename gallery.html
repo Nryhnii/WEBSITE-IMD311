@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Gallery</title>
+        <link rel="stylesheet" type="text/css" href="style.css".>
+    </head>
+    <style>
+        *{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading
+{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3
+{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.container .heading h3 span
+{
+    font-weight: 50;
+    color: whitesmoke;
+}
+
+.container .box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #223;
+}
+
+.container .box .dream
+{
+    display: flex;
+    flex-direction: column;
+    width: 45.5%;
+}
+
+.container .box .dream img
+{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 50px;
+}
+
+        body
+        {
+            background-image: url('images/gallery-bg.jpg');
+        }
+
+        button
+        {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #89b4ff;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span
+        {
+            background: #89b4ff;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span
+        {
+            width: 100%;
+        }
+
+        button:hover
+        {
+            border: none;
+        }
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="heading">
+
+                <h3>MY <span></span>GALLERY</h3>
+
+                <p style="color: rgb(255, 255, 255);">
+                    <font size="6">
+                    This is some of my random pictures
+                    </font>
+                </p>
+
+            </div>
+
+                <div class="box">
+                
+                    <div class="dream">
+                        <img src="images/gallery.jpg">
+                        <img src="images/gallery4.jpg">
+                        <img src="images/gallery1.jpg">
+                        <img src="images/gallery2.jpg">
+                        <img src="images/gallery17.JPG">
+                        <img src="images/gallery14.jpg">
+                        <img src="images/gallery18.jpg">
+                        <img src="images/gallery22.JPG">
+                        <img src="images/gallery23.jpg">
+
+
+
+                </div>
+
+                <div class="dream">
+                    <img src="images/gallery16.jpg">
+                        <img src="images/gallery6.JPG">
+                        <img src="images/gallery7.jpg">
+                        <img src="images/gallery11.jpg">
+                        <img src="images/gallery10.jpg">
+                        <img src="images/gallery15.jpg">
+                        <img src="images/gallery19.jpg">
+                        <img src="images/gallery20.jpg">
+                        <img src="images/gallery21.JPG">
+
+
+                </div>
+                </div>
+        </div>
+        <p>
+            <!--Creating button using button onclick-->
+            <button onclick="document.location ='index.html'"><span></span>Back</button>
+        </p>
+
+    </body>
+</html>
